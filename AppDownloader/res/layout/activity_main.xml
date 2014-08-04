@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    tools:context="${packageName}.${activityClass}" 
+    android:padding="20dp">
+    
+    <TextView android:id="@+id/hostTxt" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="Select host:"
+        android:textColor="#000000"/>
+    
+    <EditText android:id="@+id/host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hostTxt"
+        android:text="http://nexus.ioko.com"/>
+        
+
+    <TextView android:id="@+id/versionTxt" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/host"
+        android:layout_alignParentLeft="true"
+        android:text="Select version:"
+        android:textColor="#000000"/>
+    
+    <Spinner
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/versionTxt"
+        android:entries="@array/versions"/>
+    
+    <Button android:id="@+id/downloadBtn" 
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download and Install"
+        android:layout_below="@+id/version">
+        <requestFocus/>
+    </Button>
+
+</RelativeLayout>

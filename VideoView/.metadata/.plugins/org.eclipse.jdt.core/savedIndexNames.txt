@@ -1,0 +1,10 @@
+INDEX VERSION 1.126+C:\Src\Android\VideoView\.metadata\.plugins\org.eclipse.jdt.core
+1010265122.index
+4115959590.index
+634311109.index
+3898038472.index
+3427170154.index
+3629309356.index
+2917325262.index
+4212365151.index
+47483554.index

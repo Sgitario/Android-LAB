@@ -1,0 +1,5 @@
+package com.example.videoviewsample;
+
+public class MediaPlayerActivity extends Activity {
+
+}
